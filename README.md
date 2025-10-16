@@ -32,12 +32,12 @@ npm install
 
 ```
 ## Create .env
-
+```bash
 DATABASE_URL=postgresql://user:password@localhost:51425/db?schema=public
 PORT=5200
-
+```
+##Run migrations
 ```bash
-#Run migrations
 npx prisma migrate dev
 ```
 ### 4. Frontend Setup (Next.js)
@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 ## Create .env
-
+bash```
 NEXT_PUBLIC_API_URL=http://localhost:5200
-
+```
 
