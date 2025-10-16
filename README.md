@@ -31,8 +31,9 @@ cd backend
 npm install
 
 ```
-##Create .env
-DATABASE_URL=postgresql://Hello:1234@localhost:5432/test
+## Create .env
+
+DATABASE_URL=postgresql://user:password@localhost:51425/db?schema=public
 PORT=5200
 
 ```bash
@@ -46,7 +47,8 @@ npm install
 #Start frontend
 npm run dev
 ```
-##Create .env
+## Create .env
+
 NEXT_PUBLIC_API_URL=http://localhost:5200
 
 
