@@ -2,8 +2,8 @@
 
 Full-stack Quiz Builder application using:
 
-- **Backend:** NestJS (with Prisma ORM or models)  
-- **Frontend:** Next.js / React  
+- **Backend:** NestJS (with Prisma ORM)  
+- **Frontend:** Next.js  
 - **Database:** PostgreSQL (via Docker Compose)  
 - **Features:** Create quizzes with multiple types of questions (`boolean`, `input`, `checkbox`)
 
@@ -29,22 +29,24 @@ docker-compose up -d
 ```bash
 cd backend
 npm install
-#Create .env
+
+```
+##Create .env
 DATABASE_URL=postgresql://Hello:1234@localhost:5432/test
 PORT=5200
+
+```bash
 #Run migrations
 npx prisma migrate dev
 ```
-
 ### 4. Frontend Setup (Next.js)
 ```bash
 cd frontend
 npm install
-#Create .env
-NEXT_PUBLIC_API_URL=http://localhost:5200
-
 #Start frontend
 npm run dev
 ```
+##Create .env
+NEXT_PUBLIC_API_URL=http://localhost:5200
 
 
