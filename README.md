@@ -36,7 +36,7 @@ npm install
 DATABASE_URL=postgresql://user:password@localhost:51425/db?schema=public
 PORT=5200
 ```
-##Run migrations
+## Run migrations
 ```bash
 npx prisma migrate dev
 ```
@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 ## Create .env
-bash```
+```bash
 NEXT_PUBLIC_API_URL=http://localhost:5200
 ```
 
